@@ -1,6 +1,6 @@
 # City Bike Analysis with Tableau
 
-![citi_bike_rider.png](images\citi_bike_rider.png)
+![citi_bike_rider.png](images/citi_bike_rider.png)
 
 ## Background
 
