@@ -31,7 +31,7 @@ Your task in this assignment is to aggregate the data found in the Citi Bike Tri
 
 ## Data Cleaning and Transformation
 1. The first step in the project was to decide on the time period for analysis and then download all of the corresponding monthly csv files from the [Citi Bike Data](https://citibikenyc.com/system-data) webpage. The original time period was 2018 through 2023, but this was reduced to 2020 to 2023 based on performance issues during testing in Tableau.
-2. The next step was to create a Jupyter notebook to clean and merge the files into one csv file. This file was the data source for the Tableau workbook. This process is described below.
+2. The next step was to create a Jupyter notebook to clean and merge the files into one csv file. This file is the data source for the Tableau workbook. This process is described below.
     -  Read each monthly csv file into a dataframe and create a list with every dataframe. This was not a simple process as the structure of files changed in February 2021. Several columns were eliminated (tripduration, bikeid, birth year, gender), two were added (ride_id and rideable_type), the values for usertype changed, and every column name was changed. As illustrated below, two functions were used; one to read the csv file into a dataframe and the other to use that function to read each monthly file for an entire year and reorganize each dataframe into a consistent structure. Note the dataframes were reorganized based on the structure for files after January 2021. And finally, the second function was called in a loop to create a list of monthly dataframes for each year and then add them to one final list of all of the dataframes.
     ![data_cleaning_1.png](images/data_cleaning_1.png)
 
@@ -104,10 +104,11 @@ From this project, some key lessons learned included:
 
 ## Repository Contents
 This Github repository contains the following folders and files:
-1. data - Folder containing citi_bike_reduced_data.csv, the data source for the Tableau workbook. Note citi_bike_data.csv was the original file which contained data starting in 2018. This file was not used given performance issues with Tableau.
-2. images - Folder for images used in this readme file.
-4. citi_bike_challenge.twbx - Downloaded copy of public Tableau workbook.
-5. citi_bike_data_prep.ipynb - Jupyter notebook used to clean and merge the files into one csv file.
-6. README.md - This file.
+1. images - Folder for images used in this readme file.
+2. citi_bike_challenge.twbx - Downloaded copy of public Tableau workbook.
+3. citi_bike_data_prep.ipynb - Jupyter notebook used to clean and merge the files into one csv file.
+4. README.md - This file.
 
-Note: The Citi Bike montly csv files were not uploaded given Github's storage limits. They are stored locally in a folder called resources.
+Note: The following folders were not uploaded to Github given storage limits.
+1. data - Folder for the csv file exported in the Jupyter notebook.
+2. resources - Folder for Citi Bike montly csv files.
