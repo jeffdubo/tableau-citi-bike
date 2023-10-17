@@ -51,7 +51,8 @@ Your task in this assignment is to aggregate the data found in the Citi Bike Tri
 Fifteen worksheets were created to analyze and visualize the dataset. These were organized into three dashboards along with a home page described below.
 
 ### Home Page
-The home page provides information on the dataset and an overview of each dashboard. 
+The home page provides information on the dataset and an overview of each dashboard.
+ 
 ![workbook_db_home.png](images/workbook_db_home.png)
 
 ### Rider Dashboard
@@ -61,35 +62,45 @@ This dashboard explores patterns of casual riders and members analyzing the numb
 
 ### Station Dashboard
 This dashboard provides some basic information about the stations and focuses on the ten most most popular stations to start and end a trip. These trips are separated between casual riders and members and trips between the most popular start and end stations are analyzed. As with the rider dashboard, these visualizations can be filtered by year and season.
+
 ![workbook_db_station.png](images/workbook_db_station.png)
 
 ### Map Dashboard
-This dashboard displays the start and end stations on separate maps with the size of the marker indicating the total number of trips and the color indicating if the station was one of the ten most popular. The map can also be filtered by year, season and rider type. 
+This dashboard displays the start and end stations on separate maps with the size of the marker indicating the total number of trips and the color indicating if the station was one of the ten most popular. The map can also be filtered by year, season and rider type.
+
 ![workbook_db_map.png](images/workbook_db_map.png)
 
 ## Analysis
 ![workbook_db_ride_1.png](images/workbook_db_rider_1.png)
+
 From 2020 to 2023, there were roughly 2.2 million trips with casual rider trips totaling just over 1/2 of member trips. The average trip distance for casual riders was slightly higher than members, but the trip duration was 2.5 times longer than member riders and almost 4 times longer in 2020. Information regarding the riders was unavailable, but it is likely that many casual riders are tourists using Citi Bikes for sightseeing while members are using them for commuting to work or regular trips to specific locations.
 
 ![workbook_db_ride_2.png](images/workbook_db_rider_2.png)
+
 Between 2020 and 2022, the number of trips increased from 337K to 898K. This is due to several factors including the pandemic as well as successive increases in the number of stations between May 2020 and 2023 (https://en.wikipedia.org/wiki/Citi_Bike). Not surprisingly, the most trips occurred during the summer followed by fall, spring, and winter.
 
 ![workbook_db_ride_3.png](images/workbook_db_rider_3.png)
+
 Delving into trips by the time of day reveals that most trips occurred between 5pm and 7pm with a small spike in the morning during commuter hours. This trend is primarily due to member trips which reinforces the use of Citi Bikes for commuting to and from work. Casual rides were highest during those times as well but more eveningly spread across the day. 
 
 ![workbook_db_ride_4.png](images/workbook_db_rider_4.png)
+
 Excluding 2023 as it only accounts for half of the year, the number of trips is visually similar to a skewed bell curve with the most trips in August. This is likely due to the seasonal weather in the area. The exception to this pattern occurred in 2020 with the lowest number of trips in April when Covid restrictions were in full effect. The trip duration by month reflects the longer trips by casual riders though it is interesting that the longest trips for those riders are in February rather than during the spring and summer. 
 
 ![workbook_db_station_1.png](images/workbook_db_station_1.png)
+
 In reviewing the subsequent station maps, it becomes clear that the disparity is a result of the dataset containing start locations for Jersey City while the end stations include cities within New York. This is not noted on the Citi Bike Data webpage though most of the monthly csv files start with the letters JC. The trips which ended outside of Jersey City most likely started in Jersey City though this was not analyzed and confirmed from the data. 
 
 ![workbook_db_station_2.png](images/workbook_db_station_2.png)
+
 The 10 most popular start stations (based on the number of trips) mirrored the 10 most popular end stations and all of them are located at or near public transit services including the Path train to New York City, the Hoboken terminal, and the Hudson-Bergen Light Rail train.  
 
 ![workbook_db_station_3.png](images/workbook_db_station_3.png)
+
 Exploring the trips between the most popular stations reveals that highest number of trips for the majority of the stations started and ended at that station. Possible explanations include local points of interest, tourism,  and the usage of the nearby transit services to travel to and from other locations. Ranked 9th, the Liberty Light Rail had the highest number of trips to and from it. This may be due to it's proximity to the 36 acre Liverty State Park with many bike paths and walkways. This is supported by the station not making the top 10 during the fall and winter months.
 
 ![workbook_db_station.png](images/workbook_db_station.png)
+
 As stated earlier, the maps of the start and end stations clearly illustrate that the starting locations are limited to Jersey City while the ending stations extend into New York City and beyond. This affirms the use of Citi Bikes in combination with public transit. It is also interesting to note that Liberty Light Rail is not one of the top 10 stations for members which would support the use of this station for travel to the state park. 
 
 ## Conclusion
