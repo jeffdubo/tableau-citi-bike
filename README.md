@@ -1,4 +1,3 @@
-file:///c%3A/Users/jeffd/OneDrive/Desktop/Classwork/Homework/18-tableau-city-bike/README.md {"mtime":1697429537417,"ctime":1696452039541,"size":6615,"etag":"3bbjcgfjb6rc","orphaned":false,"typeId":""}
 # City Bike Analysis with Tableau
 
 ![citi_bike_rider.png](images\citi_bike_rider.png)
