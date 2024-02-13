@@ -1,4 +1,4 @@
-# City Bike Analysis with Tableau
+# Citi Bike Analysis with Tableau
 
 ![citi_bike_rider.png](images/citi_bike_rider.png)
 
